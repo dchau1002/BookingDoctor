@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:id="@+id/kkkl"
+    android:layout_marginStart="5dp"
+    android:layout_marginEnd="5dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardUseCompatPadding="true"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="2dp"
+    app:cardBackgroundColor="@color/white"
+    app:contentPadding="3dp"
+    xmlns:tools="http://schemas.android.com/tools">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_margin="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:fontFamily="@font/cabin"
+
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:id="@+id/nametv_user"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Lich khám : "/>
+                <TextView
+                    android:fontFamily="@font/cabin"
+
+                    android:id="@+id/ngaykham"
+                    android:textSize="16dp"
+                    android:textColor="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Vào ngày : "/>
+
+                <TextView
+                    android:fontFamily="@font/cabin"
+
+                    android:id="@+id/songuoidatlich"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Số lượng bệnh nhân đăng ký:"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp">
+            <Button
+                android:textAllCaps="false"
+                android:fontFamily="@font/cabin"
+                android:backgroundTint="#0966C0"
+
+                android:layout_alignParentRight="true"
+                android:id="@+id/follow"
+                android:layout_width="130dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginRight="10dp"
+                android:text="Đặt lịch" />
+            <TextView
+                android:fontFamily="@font/cabin"
+
+                android:layout_alignParentRight="true"
+                android:id="@+id/follow2"
+                android:gravity="center"
+                 android:padding="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:layout_marginRight="40dp"
+                android:hint="Đã Đặt"
+                android:textSize="16dp" />
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".OTPActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toobarchat"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@color/white"
+        android:theme="@style/AppTheme">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="left">
+            <ImageButton
+                android:id="@+id/backc"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/ic_back"
+                android:layout_width="wrap_content"
+                android:background="@color/white"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+
+
+    <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginStart="64dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginEnd="64dp"
+                android:elevation="10dp"
+                app:cardCornerRadius="20sp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/sigNup"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/cabin"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:text="OTP Code"
+                        android:textColor="#0966C0"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+            <TextView
+                android:fontFamily="@font/cabin"
+
+                android:layout_marginStart="20dp"
+                android:gravity="left"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nhập mã OTP"
+                android:textSize="16dp"/>
+            <EditText
+                android:fontFamily="@font/cabin"
+                android:id="@+id/edt_OTP"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/text_box"
+                android:drawableLeft="@drawable/email_icon"
+                android:drawablePadding="8dp"
+                android:drawableTint="#0966C0"
+                android:hint="Nhập mã OTP"
+                android:minLines="6"
+                android:textSize="15dp"
+                android:inputType="number"
+                android:padding="16dp" />
+
+            <TextView
+                android:gravity="right"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="30dp"
+                android:text="60s."
+                android:visibility="gone"
+                android:id="@+id/forgot"
+                android:textSize="15dp"/>
+
+
+
+            <Button
+                android:fontFamily="@font/cabin"
+                android:textAllCaps="false"
+
+                android:id="@+id/btn_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="20dp"
+                android:theme="@style/Button.White"
+                android:text="Xác nhận"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                style="@style/loginButton" />
+
+        <TextView
+            android:fontFamily="@font/cabin"
+
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" Bạn không nhận được mã OTP?"
+            android:id="@+id/forgotss"
+            android:textAlignment="center"
+            android:textSize="16dp"/>
+            <!--        <Button-->
+            <!--            android:id="@+id/btn_signup"-->
+            <!--            android:layout_width="match_parent"-->
+            <!--            android:layout_height="wrap_content"-->
+            <!--            android:layout_marginStart="60dp"-->
+            <!--            android:layout_marginEnd="60dp"-->
+            <!--            android:layout_marginBottom="20dp"-->
+            <!--            android:theme="@style/Button.White"-->
+            <!--            android:text="SigNup"-->
+            <!--            android:textSize="24dp"-->
+            <!--            android:gravity="center"-->
+            <!--            android:textColor="@android:color/white"-->
+            <!--            style="@style/loginButton" />-->
+
+
+
+        </LinearLayout>
+
+
+
+
+    </RelativeLayout>

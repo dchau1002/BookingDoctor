@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/group1">
+        <item android:id="@+id/pro1"
+            android:icon="@drawable/ic_person"
+            android:title="Hồ Sơ cá nhân">
+        </item>
+        <item android:id="@+id/pro2"
+            android:icon="@drawable/ic_project"
+            android:title="Lịch sử">
+        </item>
+
+        <item android:id="@+id/pro5"
+            android:icon="@drawable/ic_histor"
+            android:title="Điều khoản và quy định">
+        </item>
+        <item android:id="@+id/pro6"
+            android:icon="@drawable/ic_even"
+            android:title="Quy trinh đặt lịch ">
+        </item>
+        <item android:id="@+id/pro8"
+            android:icon="@drawable/ic_question"
+            android:title="Những câu hỏi">
+        </item>
+        <item android:id="@+id/pro7"
+            android:icon="@drawable/ic_phone"
+            android:title="Hotline 1900 4625">
+        </item>
+    </group>
+
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/group2">
+        <item android:id="@+id/ab1"
+            android:icon="@drawable/ic_setting"
+            android:title="Cài đặt">
+        </item>
+        <item android:id="@+id/ab2"
+            android:icon="@drawable/ic_about"
+            android:title="Về Chúng Tôi">
+        </item>
+        <item android:id="@+id/ab3"
+            android:icon="@drawable/ic_logout"
+            android:title="Đăng xuất">
+        </item>
+    </group>
+</menu>

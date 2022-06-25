@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Comfirm_In4_Patient_Activity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toobarchat"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:background="@color/white"
+            android:theme="@style/AppTheme">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="left">
+                <ImageButton
+                    android:id="@+id/backc"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/ic_back"
+                    android:layout_width="wrap_content"
+                    android:background="@color/white"
+                    android:layout_height="wrap_content"/>
+            </RelativeLayout>
+        </androidx.appcompat.widget.Toolbar>
+        <TextView
+            android:fontFamily="@font/cabin"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:text="Đăng ký tài khoản bệnh nhân"/>
+        <TextView
+            android:fontFamily="@font/cabin"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="(dành cho bệnh nhân)"/>
+
+        <EditText
+            android:fontFamily="@font/cabin"
+            android:id="@+id/tv1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="20dp"
+            android:textSize="16sp"
+            android:background="@drawable/skip_button"
+            android:drawablePadding="8dp"
+            android:drawableTint="@color/themeColor"
+            android:hint="Họ và tên"
+            android:inputType="text"
+            android:padding="16dp" />
+        <TextView
+            android:fontFamily="@font/cabin"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:text="Hình ảnh chân dung của bạn."/>
+        <LinearLayout
+            android:id="@+id/themha"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:background="@color/white">
+            <ImageView
+                android:id="@+id/img1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_camera"/>
+            <TextView
+                android:fontFamily="@font/cabin"
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="Hình ảnh"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:background="@color/white">
+
+
+            <TextView
+                android:fontFamily="@font/cabin"
+                android:gravity="center"
+                android:id="@+id/tvcontentdate"
+                android:layout_width="220dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/skip_button"
+                android:drawablePadding="8dp"
+                android:drawableTint="@color/themeColor"
+                android:hint="Ngày/tháng/năm sinh"
+                android:paddingTop="12dp"
+                android:paddingBottom="12dp"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:fontFamily="@font/cabin"
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:text="Giới tính" />
+
+                <Space
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content"/>
+                <Spinner
+                    android:fontFamily="@font/cabin"
+                    android:id="@+id/spinner_employee"
+                    android:layout_width="110dp"
+                    android:layout_height="35dp"
+                    app:layout_constraintVertical_bias="0.498" />
+            </LinearLayout>
+        </LinearLayout>
+        <RelativeLayout
+            android:id="@+id/datechoo"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <DatePicker
+                android:id="@+id/datePicker"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:calendarViewShown="false"
+                android:datePickerMode="spinner" />
+            <Button
+                android:layout_below="@+id/datePicker"
+                android:id="@+id/btn_data"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="60dp"
+                android:layout_marginEnd="60dp"
+                android:theme="@style/Button.White"
+                android:textColor="@android:color/white"
+                android:text="Ok"
+                style="@style/loginButton" />
+        </RelativeLayout>
+
+        <androidx.cardview.widget.CardView
+            app:cardCornerRadius="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:padding="10dp">
+            <ImageView
+                android:id="@+id/image_post_add"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#A9A9A9	"/>
+
+        </androidx.cardview.widget.CardView>
+        <EditText
+            android:fontFamily="@font/cabin"
+            android:id="@+id/tvcontent1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="5dp"
+            android:textSize="15dp"
+            android:background="@drawable/skip_button"
+            android:drawablePadding="8dp"
+            android:drawableTint="@color/themeColor"
+            android:hint="Mã BHYT (nếu có)"
+            android:paddingTop="10dp"
+            android:paddingLeft="16dp"
+            android:inputType="textEmailAddress"
+            android:paddingRight="35dp"
+            android:paddingBottom="10dp"/>
+        <EditText
+            android:fontFamily="@font/cabin"
+            android:id="@+id/tvcontent2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="5dp"
+            android:textSize="15dp"
+            android:background="@drawable/skip_button"
+            android:drawablePadding="8dp"
+            android:drawableTint="@color/themeColor"
+            android:hint="Địa chỉ."
+            android:paddingTop="10dp"
+            android:paddingLeft="16dp"
+            android:inputType="textEmailAddress"
+            android:paddingRight="35dp"
+            android:paddingBottom="10dp"/>
+        <TextView
+            android:fontFamily="@font/cabin"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:text="Thông tin thể trạng "/>
+
+
+        <TextView
+            android:fontFamily="@font/cabin"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginBottom="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="Nhóm máu"/>
+
+        <Spinner
+            android:fontFamily="@font/cabin"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_height="50dp"
+            android:id="@+id/spinnerdata"
+            android:textAlignment="center"/>
+
+
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:background="@color/white">
+
+            <EditText
+                android:fontFamily="@font/cabin"
+                android:id="@+id/tvchieucao"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginRight="20dp"
+                android:drawablePadding="8dp"
+                android:drawableTint="@color/themeColor"
+                android:hint="Chiều cao (cm)."
+                android:paddingLeft="35dp"
+                android:paddingTop="10dp"
+                android:paddingRight="35dp"
+                android:paddingBottom="8dp"
+                android:inputType="number"
+                android:textSize="13sp" />
+
+
+            <EditText
+                android:fontFamily="@font/cabin"
+                android:id="@+id/tvcannang"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginRight="20dp"
+                android:drawablePadding="8dp"
+                android:drawableTint="@color/themeColor"
+                android:hint="Cân nặng (Kg)."
+                android:paddingLeft="35dp"
+                android:paddingTop="10dp"
+                android:paddingRight="35dp"
+                android:inputType="number"
+                android:paddingBottom="8dp"
+                android:textSize="13sp" />
+
+
+        </LinearLayout>
+
+        <Button
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:fontFamily="@font/cabin"
+            android:id="@+id/btn_post"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:layout_marginEnd="80dp"
+            android:layout_marginTop="40dp"
+            android:theme="@style/Button.White"
+            android:textColor="@android:color/white"
+            android:text="Xác nhận"
+            style="@style/loginButton"
+            android:layout_marginBottom="100dp"/>
+
+    </LinearLayout>
+</ScrollView>

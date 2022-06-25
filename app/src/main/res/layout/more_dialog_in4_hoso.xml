@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/bottom_sheet2"
+    android:background="@drawable/bottom_sheet1"
+    android:padding="15dp">
+
+    <TextView
+        android:fontFamily="@font/cabin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thông tin chi tiết hồ sơ của bạn"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"/>
+
+
+    <LinearLayout
+        android:padding="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:background="@color/white">
+
+        <TextView
+            android:fontFamily="@font/cabin"
+
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:id="@+id/tvv12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Họ và tên : "/>
+        <TextView
+            android:fontFamily="@font/cabin"
+
+            android:id="@+id/tvv13"
+            android:textSize="16dp"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Giới tính : "/>
+
+        <TextView
+            android:fontFamily="@font/cabin"
+
+            android:textStyle="bold"
+            android:id="@+id/tvv14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tên hồ sơ : "
+            android:textColor="@color/black"
+            android:textSize="16dp" />
+        <TextView
+            android:fontFamily="@font/cabin"
+
+            android:id="@+id/tvv20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tên hồ sơ : "
+            android:textColor="@color/black"
+            android:textSize="16dp" />
+        <TextView
+            android:fontFamily="@font/cabin"
+
+            android:id="@+id/tvv15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Địa chỉ:"
+            android:textColor="@color/black"
+            android:textSize="16dp" />
+        <TextView
+            android:fontFamily="@font/cabin"
+
+            android:id="@+id/tvv16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Chiều cao : "
+            android:textColor="@color/grey"
+            android:textSize="16dp" />
+        <TextView
+            android:fontFamily="@font/cabin"
+
+            android:id="@+id/tvv17"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cân nặng : "
+            android:textColor="@color/grey"
+            android:textSize="16dp" />
+        <TextView
+            android:fontFamily="@font/cabin"
+
+            android:id="@+id/tvv18"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nhóm máu : "
+            android:textColor="@color/grey"
+            android:textSize="16dp" />
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:fontFamily="@font/cabin"
+            android:background="#0966C0"
+            android:textColor="#FFFFFF"
+
+            android:id="@+id/tvcontent1"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:textSize="15dp"
+            android:gravity="center"
+            android:drawablePadding="8dp"
+            android:layout_alignParentBottom="true"
+            android:text="Cập nhật"
+            android:paddingTop="10dp"
+            android:paddingLeft="35dp"
+            android:inputType="textEmailAddress"
+            android:paddingRight="35dp"
+            android:paddingBottom="10dp"/>
+        <TextView
+            android:fontFamily="@font/cabin"
+            android:background="#0966C0"
+            android:textColor="#FFFFFF"
+
+            android:id="@+id/tvcontent2"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:drawablePadding="8dp"
+            android:layout_alignParentBottom="true"
+            android:text="Xóa"
+            android:paddingTop="10dp"
+            android:paddingLeft="35dp"
+            android:inputType="textEmailAddress"
+            android:paddingRight="35dp"
+            android:paddingBottom="10dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

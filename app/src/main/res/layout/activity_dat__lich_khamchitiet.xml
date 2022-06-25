@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Dat_LichKhamchitiet">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toobarchat"
+                android:layout_width="match_parent"
+                android:layout_height="?android:attr/actionBarSize"
+                android:background="@color/white"
+                android:theme="@style/AppTheme">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="left">
+                    <ImageButton
+                        android:id="@+id/backc"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="15dp"
+                        android:src="@drawable/ic_back"
+                        android:layout_width="wrap_content"
+                        android:background="@color/white"
+                        android:layout_height="wrap_content"/>
+                </RelativeLayout>
+            </androidx.appcompat.widget.Toolbar>
+
+
+            <TextView
+                android:fontFamily="@font/cabin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="Đặt lịch hẹn chi tiết"
+                android:textSize="25dp"
+                android:layout_marginBottom="12dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:background="@color/white">
+                <TextView
+                    android:fontFamily="@font/cabin"
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:text="Thông tin lịch hẹn"/>
+                <TextView
+                    android:fontFamily="@font/cabin"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16dp"
+                    android:text="Hồ sơ bệnh nhân"/>
+                <TextView
+                    android:fontFamily="@font/cabin"
+                    android:id="@+id/hosso"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/skip_button"
+                    android:drawablePadding="8dp"
+                    android:drawableTint="@color/themeColor"
+                    android:hint="Vui lòng chọn hồ sơ bênh nhân"
+                    android:paddingLeft="16dp"
+                    android:paddingTop="10dp"
+                    android:paddingRight="35dp"
+                    android:paddingBottom="10dp"
+                    android:textSize="16dp" />
+                <TextView
+                    android:fontFamily="@font/cabin"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16dp"
+                    android:text="Khung giờ"/>
+                <TextView
+                    android:fontFamily="@font/cabin"
+                    android:id="@+id/tvcontentdate"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/skip_button"
+                    android:drawablePadding="8dp"
+                    android:drawableTint="@color/themeColor"
+                    android:hint="Vui lòng chọn khung giờ khám"
+                    android:paddingLeft="16dp"
+                    android:paddingTop="10dp"
+                    android:paddingRight="35dp"
+                    android:paddingBottom="10dp"
+                    android:textSize="16dp" />
+                <LinearLayout
+                    android:visibility="gone"
+                    android:id="@+id/thigian"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="10dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@color/white">
+
+                    <TextView
+                        android:layout_marginLeft="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:text="Buổi Sáng"/>
+
+                    <GridLayout
+                        android:id="@+id/GridLayout1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:columnCount="2"
+                        android:rowCount="2"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_marginTop="10dp"
+                            android:layout_marginStart="10dp"
+                            android:id="@+id/h1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/skip_button"
+                            android:drawableTint="@color/themeColor"
+                            android:text="8:00 - 8:30"
+                            android:paddingLeft="20dp"
+                            android:paddingTop="8dp"
+                            android:paddingBottom="8dp"
+                            android:paddingRight="20dp"
+                            android:textSize="13dp" />
+                        <TextView
+                            android:layout_marginTop="10dp"
+                            android:layout_marginStart="10dp"
+                            android:id="@+id/h2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/skip_button"
+                            android:drawableTint="@color/themeColor"
+                            android:text="8:30 - 9:00"
+                            android:paddingLeft="20dp"
+                            android:paddingTop="8dp"
+                            android:paddingBottom="8dp"
+                            android:paddingRight="20dp"
+                            android:textSize="13dp" />
+                        <TextView
+                            android:layout_marginTop="10dp"
+                            android:layout_marginStart="10dp"
+                            android:id="@+id/h3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/skip_button"
+                            android:drawableTint="@color/themeColor"
+                            android:text="9:00 - 9:30"
+                            android:paddingLeft="20dp"
+                            android:paddingTop="8dp"
+                            android:paddingBottom="8dp"
+                            android:paddingRight="20dp"
+                            android:textSize="13dp" />
+                        <TextView
+                            android:layout_marginTop="10dp"
+                            android:layout_marginStart="10dp"
+                            android:id="@+id/h4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/skip_button"
+                            android:drawableTint="@color/themeColor"
+                            android:text="9:30 - 10:00"
+                            android:paddingLeft="20dp"
+                            android:paddingTop="8dp"
+                            android:paddingBottom="8dp"
+                            android:paddingRight="20dp"
+                            android:textSize="13dp" />
+                        <TextView
+                            android:layout_marginTop="10dp"
+                            android:layout_marginStart="10dp"
+                            android:id="@+id/h5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/skip_button"
+                            android:drawableTint="@color/themeColor"
+                            android:text="10:00 - 10:30"
+                            android:paddingLeft="20dp"
+                            android:paddingTop="8dp"
+                            android:paddingBottom="8dp"
+                            android:paddingRight="20dp"
+                            android:textSize="13dp" />
+                        <TextView
+                            android:layout_marginTop="10dp"
+                            android:layout_marginStart="10dp"
+                            android:id="@+id/h6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/skip_button"
+                            android:drawableTint="@color/themeColor"
+                            android:text="10:30 - 11:30"
+                            android:paddingLeft="20dp"
+                            android:paddingTop="8dp"
+                            android:paddingBottom="8dp"
+                            android:paddingRight="20dp"
+                            android:textSize="13dp" />
+
+                    </GridLayout>
+
+
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:text="Buổi Chiều"/>
+
+                    <GridLayout
+                        android:id="@+id/GridLayout2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:columnCount="2"
+                        android:rowCount="2"
+                        android:orientation="horizontal"
+                        >
+                        <TextView
+                            android:layout_marginTop="10dp"
+                            android:layout_marginStart="10dp"
+                            android:id="@+id/h7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/skip_button"
+                            android:drawableTint="@color/themeColor"
+                            android:text="13:30 - 14:00"
+                            android:paddingLeft="20dp"
+                            android:paddingTop="8dp"
+                            android:paddingBottom="8dp"
+                            android:paddingRight="20dp"
+                            android:textSize="13dp" />
+                        <TextView
+                            android:layout_marginTop="10dp"
+                            android:layout_marginStart="10dp"
+                            android:id="@+id/h8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/skip_button"
+                            android:drawableTint="@color/themeColor"
+                            android:text="14:00 - 14:30"
+                            android:paddingLeft="20dp"
+                            android:paddingTop="8dp"
+                            android:paddingBottom="8dp"
+                            android:paddingRight="20dp"
+                            android:textSize="13dp" />
+                        <TextView
+                            android:layout_marginTop="10dp"
+                            android:layout_marginStart="10dp"
+                            android:id="@+id/h9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/skip_button"
+                            android:drawableTint="@color/themeColor"
+                            android:text="14:30 - 15:00"
+                            android:paddingLeft="20dp"
+                            android:paddingTop="8dp"
+                            android:paddingBottom="8dp"
+                            android:paddingRight="20dp"
+                            android:textSize="13dp" />
+                        <TextView
+                            android:layout_marginTop="10dp"
+                            android:layout_marginStart="10dp"
+                            android:id="@+id/h10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/skip_button"
+                            android:drawableTint="@color/themeColor"
+                            android:text="15:00 - 15:30"
+                            android:paddingLeft="20dp"
+                            android:paddingTop="8dp"
+                            android:paddingBottom="8dp"
+                            android:paddingRight="20dp"
+                            android:textSize="13dp" />
+                        <TextView
+                            android:layout_marginTop="10dp"
+                            android:layout_marginStart="10dp"
+                            android:id="@+id/h11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/skip_button"
+                            android:drawableTint="@color/themeColor"
+                            android:text="15:30 - 16:00"
+                            android:paddingLeft="20dp"
+                            android:paddingTop="8dp"
+                            android:paddingBottom="8dp"
+                            android:paddingRight="20dp"
+                            android:textSize="13dp" />
+                        <TextView
+                            android:layout_marginTop="10dp"
+                            android:layout_marginStart="10dp"
+                            android:id="@+id/h12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/skip_button"
+                            android:drawableTint="@color/themeColor"
+                            android:text="16:00 - 16:30"
+                            android:paddingLeft="20dp"
+                            android:paddingTop="8dp"
+                            android:paddingBottom="8dp"
+                            android:paddingRight="20dp"
+                            android:textSize="13dp" />
+                        <TextView
+                            android:layout_marginTop="10dp"
+                            android:layout_marginStart="10dp"
+                            android:id="@+id/h13"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/skip_button"
+                            android:drawableTint="@color/themeColor"
+                            android:text="16:30 - 17:00"
+                            android:paddingLeft="20dp"
+                            android:paddingTop="8dp"
+                            android:paddingBottom="8dp"
+                            android:paddingRight="20dp"
+                            android:textSize="13dp" />
+                    </GridLayout>
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+
+            <TextView
+                android:fontFamily="@font/cabin"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:text="Ghi chú"/>
+            <EditText
+                android:fontFamily="@font/cabin"
+                android:id="@+id/login_email"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/text_box"
+                android:drawablePadding="8dp"
+                android:drawableTint="@color/themeColor"
+                android:hint="Triệu chứng, tiền sử bệnh án."
+                android:minLines="6"
+                android:textSize="16dp"
+                android:inputType="textEmailAddress"
+                android:padding="16dp" />
+            <LinearLayout
+                android:id="@+id/themha"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:background="@color/white">
+                <ImageView
+                    android:id="@+id/img1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_camera"/>
+                <TextView
+                    android:fontFamily="@font/cabin"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16dp"
+                    android:text="Hình ảnh (nếu có)"/>
+            </LinearLayout>
+            <Button
+                android:textAllCaps="false"
+                android:fontFamily="@font/cabin"
+                android:textStyle="bold"
+                android:id="@+id/btn_post"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="80dp"
+                android:layout_marginEnd="80dp"
+                android:layout_marginTop="40dp"
+                android:theme="@style/Button.White"
+                android:textColor="@android:color/white"
+                android:text="Xác nhận"
+                style="@style/loginButton"
+                android:layout_marginBottom="100dp"/>
+
+        </LinearLayout>
+    </ScrollView>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/nav_home"
+        android:title="Home"
+        android:icon="@drawable/ic_home"/>
+
+    <item android:id="@+id/nav_lichkham"
+        android:title="Kiểm Duyệt"
+        android:icon="@drawable/bg_lichkham2"/>
+
+    <item android:id="@+id/nav_videos"
+        android:title="ManageDT"
+        android:icon="@drawable/bg_hoso"/>
+
+    <item android:id="@+id/nav_discovers"
+        android:title="ManageUser"
+        android:icon="@drawable/bg_hoso"/>
+
+    <item android:id="@+id/nav_notications"
+        android:title="Thông báo"
+        android:icon="@drawable/bg_thongbao"/>
+
+</menu>

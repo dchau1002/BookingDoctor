@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:id="@+id/kkkl"
+    android:layout_marginStart="5dp"
+    android:layout_marginEnd="5dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardUseCompatPadding="true"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="2dp"
+    app:cardBackgroundColor="@color/white"
+    app:contentPadding="3dp">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <RelativeLayout
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <com.blogspot.atifsoftwares.circularimageview.CircularImageView
+                android:id="@+id/avatar_user"
+                android:src="@drawable/ic_face"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                />
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_margin="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/theloai_user"
+                android:textSize="16dp"
+                android:maxLength="30"
+                android:fontFamily="@font/cabin"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Person Email"/>
+            <TextView
+                android:fontFamily="@font/cabin"
+
+                android:textSize="20dp"
+                android:textColor="@color/black"
+            android:id="@+id/nametv_user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Person Name"/>
+            <TextView
+                android:fontFamily="@font/cabin"
+
+                android:id="@+id/phone_user"
+                android:textSize="13dp"
+                android:maxLength="12"
+                android:textColor="@color/singun"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Person Email"/>
+            <TextView
+                android:fontFamily="@font/cabin"
+
+                android:id="@+id/diachi_user"
+                android:textSize="16dp"
+                android:maxLength="30"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Person Email"/>
+        </LinearLayout>
+    </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp">
+            <TextView
+                android:fontFamily="@font/cabin"
+
+                android:layout_marginTop="22dp"
+                android:layout_marginStart="12dp"
+                android:textSize="17dp"
+                android:textColor="#0966C0"
+                android:id="@+id/Chuyenkhoan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Person Name"/>
+            <Button
+                android:textAllCaps="false"
+                android:fontFamily="@font/cabin"
+
+                android:layout_alignParentRight="true"
+                android:id="@+id/follow"
+                android:backgroundTint="#0966C0"
+                android:layout_width="130dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="10dp"
+                android:text="Đặt Lịch"
+                android:textSize="15dp" />
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

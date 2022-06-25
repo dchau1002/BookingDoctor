@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".PharmacyActivity">
+
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginStart="64dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginEnd="64dp"
+                android:elevation="10dp"
+                android:translationZ="8dp"
+                app:cardCornerRadius="20sp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/cabin"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:text="Bạn là ?"
+                    android:textColor="#0966C0"
+                    android:textSize="20sp" />
+
+            </androidx.cardview.widget.CardView>
+            <Button
+                android:fontFamily="@font/cabin"
+                android:textAllCaps="false"
+
+                android:id="@+id/doctor_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="20dp"
+                android:text=" Bác sĩ"
+                style="@style/loginButton"/>
+            <Button
+                android:fontFamily="@font/cabin"
+                android:textAllCaps="false"
+
+                android:id="@+id/Patient_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="48dp"
+                android:theme="@style/Button.White"
+                android:text="Bệnh nhân"
+                style="@style/loginButton"/>
+            <TextView
+                android:fontFamily="@font/cabin"
+
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Đăng nhập với tư cách Admin"
+                android:id="@+id/admin_btn"
+                android:textAlignment="center"
+                android:textSize="16dp"/>
+        </LinearLayout>
+
+
+
+    </RelativeLayout>

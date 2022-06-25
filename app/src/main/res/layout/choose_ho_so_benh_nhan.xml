@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Choose_HoSoBenhNhan">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toobarchat"
+                android:layout_width="match_parent"
+                android:layout_height="?android:attr/actionBarSize"
+                android:background="@color/white"
+                android:theme="@style/AppTheme">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="left">
+                    <ImageButton
+                        android:id="@+id/backc"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="15dp"
+                        android:src="@drawable/ic_back"
+                        android:layout_width="wrap_content"
+                        android:background="@color/white"
+                        android:layout_height="wrap_content"/>
+                </RelativeLayout>
+            </androidx.appcompat.widget.Toolbar>
+
+
+            <TextView
+                android:fontFamily="@font/cabin"
+                android:layout_marginTop="7dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Danh sách hồ sơ của bạn"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:layout_marginBottom="12dp"
+                android:textStyle="bold" />
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/rcvhosass"/>
+
+
+
+        </LinearLayout>
+    <TextView
+        android:fontFamily="@font/cabin"
+
+        android:textColorHint="#0966C0"
+        android:id="@+id/tvcontent1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:textSize="16dp"
+        android:gravity="center"
+        android:drawablePadding="8dp"
+        android:layout_alignParentBottom="true"
+        android:drawableTint="@color/themeColor"
+        android:hint="+ Thêm hồ sơ mới"
+        android:paddingTop="10dp"
+        android:paddingLeft="35dp"
+        android:inputType="textEmailAddress"
+        android:paddingRight="35dp"
+        android:paddingBottom="10dp"/>
+    </RelativeLayout>

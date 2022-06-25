@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:background="#F3EFEF"
+        android:id="@+id/layoudraww"
+        android:layout_height="match_parent"
+        tools:context=".LichSu_User">
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:id="@+id/layoutOne"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:visibility="visible">
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <androidx.appcompat.widget.Toolbar
+                        android:id="@+id/toobarchat"
+                        android:layout_width="match_parent"
+                        android:layout_height="?android:attr/actionBarSize"
+                        android:background="@color/white"
+                        android:theme="@style/AppTheme">
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="left">
+                            <ImageButton
+                                android:id="@+id/backc"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="15dp"
+                                android:src="@drawable/ic_back"
+                                android:layout_width="wrap_content"
+                                android:background="@color/white"
+                                android:layout_height="wrap_content"/>
+                        </RelativeLayout>
+                    </androidx.appcompat.widget.Toolbar>
+
+                    <TextView
+                        android:fontFamily="@font/cabin"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_centerVertical="true"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:textSize="25dp"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:text="Lịch sử khám bệnh"/>
+                    <TextView
+                        android:fontFamily="@font/cabin"
+
+                        android:layout_alignParentLeft="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16dp"
+                        android:layout_marginStart="15dp"
+                        android:textStyle="bold"
+                        android:textColor="#190702"
+                        android:text="Lọc theo ngày"/>
+
+
+                    <LinearLayout
+                        android:layout_marginTop="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingBottom="10dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:background="@color/white">
+
+                        <Button
+                            android:fontFamily="@font/cabin"
+                            android:layout_gravity="center"
+                            android:id="@+id/datePickerButton"
+                            android:layout_width="250dp"
+                            android:layout_height="wrap_content"
+                            android:text="..."
+                            android:textSize="14dp"
+                            android:textColor="@color/black"
+                            style="?android:spinnerStyle"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintRight_toRightOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView"
+                            android:layout_marginTop="10dp"
+                            android:onClick="openDatePicker"/>
+
+
+                    </LinearLayout>
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:layout_marginTop="8dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/rcvsas"/>
+                </LinearLayout>
+
+            </androidx.core.widget.NestedScrollView>
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+    </RelativeLayout>

@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:background="#F3EFEF"
+        android:id="@+id/layoudraww"
+        android:layout_height="match_parent"
+        tools:context=".Cau_Hoi_Thuong_Gap">
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:id="@+id/layoutOne"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:visibility="visible">
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:background="#0966C0"
+                            android:orientation="horizontal"
+                            android:padding="15dp">
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:cardCornerRadius="26dp">
+
+                                <com.blogspot.atifsoftwares.circularimageview.CircularImageView
+                                    android:id="@+id/cat_img"
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    android:layout_centerHorizontal="true"
+                                    android:background="@drawable/hi" />
+                            </androidx.cardview.widget.CardView>
+
+                            <TextView
+                                android:paddingLeft="10dp"
+                                android:fontFamily="@font/cabin"
+                                android:id="@+id/tvNmae"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="10dp"
+                                android:layout_weight="1"
+                                android:gravity="left|center_vertical"
+                                android:text="Câu hỏi thường gặp"
+                                android:textColor="@color/white"
+                                android:textSize="25dp"
+                                android:textStyle="bold" />
+
+
+                        </LinearLayout>
+
+
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/cabin"
+                        android:gravity="left"
+                        android:textStyle="bold"
+                        android:text="\t\t\t1. Những ai được đăng ký lịch khám hoặc tư vấn trực tiếp với các bác sĩ?"
+                        android:textColor="#000000"
+                        android:textSize="16sp" />
+                    <TextView
+                        android:fontFamily="@font/cabin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:text="\t\t\tTất cả các bệnh nhân có nhu cầu sử dịch vụ đặt lịch khám hay lịch tư vấn đều có thể đăng ký qua ứng dụng. Với những trường hợp khẩn cấp, người bệnh cần lập tức đến cơ sở y tế để được khám chữa bệnh kịp thời."
+                        android:textColor="@color/grey"
+                        android:textSize="16sp"/>
+                    <TextView
+                        android:textColor="@color/grey"
+                        android:text="___________________________________________________"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/cabin"
+                        android:gravity="left"
+                        android:textStyle="bold"
+                        android:text="\t\t\t2. Tôi cần mang theo giấy tờ gì khi đến khám tại các cơ sở y tế theo lịch hẹn?"
+                        android:textColor="#000000"
+                        android:textSize="16sp" />
+                    <TextView
+                        android:fontFamily="@font/cabin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:text="\t\t\tBạn vui lòng mang theo đầy đủ các giấy tờ sau:\n- Giấy tờ tùy thân (CMND/CCCD, Hộ chiếu,...).\n- BHYT."
+                        android:textColor="@color/grey"
+                        android:textSize="16sp"/>
+                    <TextView
+                        android:textColor="@color/grey"
+                        android:text="___________________________________________________"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/cabin"
+                        android:gravity="left"
+                        android:textStyle="bold"
+                        android:text="\t\t\t3. Tôi muốn đăng ký khám cho người thân của tôi có được không?"
+                        android:textColor="#000000"
+                        android:textSize="16sp" />
+                    <TextView
+                        android:fontFamily="@font/cabin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:text="\t\t\tĐược. Bạn có thể đăng ký khám cho người thân trên tài khoản của bản mình. Tuy nhiên, bạn phải tạo hồ sơ riêng cho người thân và đặt khám trên đúng hồ sơ đó."
+                        android:textColor="@color/grey"
+                        android:textSize="16sp"/>
+                    <TextView
+                        android:textColor="@color/grey"
+                        android:text="___________________________________________________"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:padding="10dp"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/cabin"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:text="LIÊN HỆ HOTLINE 0335353043\n NẾU CÓ THÊM THẮC MẮC NÀO KHÁC"
+                        android:textColor="#0966C0"
+                        android:textSize="12sp" />
+
+
+                </LinearLayout>
+
+            </androidx.core.widget.NestedScrollView>
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+    </RelativeLayout>

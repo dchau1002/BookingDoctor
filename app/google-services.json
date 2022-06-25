@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "615311089612",
+    "firebase_url": "https://app-book-doctor1-default-rtdb.firebaseio.com",
+    "project_id": "app-book-doctor1",
+    "storage_bucket": "app-book-doctor1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:615311089612:android:718da0468395afc676c769",
+        "android_client_info": {
+          "package_name": "com.example.app_book"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "615311089612-72kjs0ritvuv6g1k8jaai8dq7j9ra0ia.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBwUfbb9X3iQMJ-O6R9SUMK6apGllgYBPU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "615311089612-72kjs0ritvuv6g1k8jaai8dq7j9ra0ia.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
